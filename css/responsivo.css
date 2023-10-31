@@ -33,7 +33,11 @@
 
 @media screen and (max-width: 960px) {
   ul li a {
-    font-size: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .menu-nav li {
+    margin-left: 2rem;
   }
 }
 
