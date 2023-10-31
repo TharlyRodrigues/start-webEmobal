@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/resert.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/responsivo.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jim+Nightshade&family=Poppins:ital,wght@0,300;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <title>web start</title>
+  </head>
+  <body>
+    <header>
+      <section class="menu">
+        <div class="menu-container">
+          <a href="#" class="logo-menu"
+            ><img src="img/logo.svg" alt="" />Educare</a
+          >
+          <a href="#" class="icon-menu"><i class="fa-solid fa-bars"></i></a>
+          <nav class="menu-nav">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li class="dropdown">
+                <a href="#" class="btn-drop"
+                  >Courses <i class="fa-solid fa-chevron-down"></i
+                ></a>
+                <div class="dropdown-container">
+                  <a href="#">Course 1</a>
+                  <a href="#">Course 2</a>
+                  <a href="#">Course 3</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="btn-drop"
+                  >Blog <i class="fa-solid fa-chevron-down"></i>
+                </a>
+                <div class="dropdown-container">
+                  <a href="#">Blog 1</a>
+                  <a href="#">Blog 2</a>
+                  <a href="#">Blog 3</a>
+                </div>
+              </li>
+              <li>
+                <button><a href="#" class="menu-btn">Contact us</a></button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <nav class="menu-mob">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li class="dropdown-mob">
+              <a href="#" class="btn-drop"
+                >Courses <i class="fa-solid fa-chevron-down"></i
+              ></a>
+              <div class="dropdown-container-mob">
+                <a href="#">Course 1</a>
+                <a href="#">Course 2</a>
+                <a href="#">Course 3</a>
+              </div>
+            </li>
+            <li class="dropdown-mob">
+              <a href="#" class="btn-drop"
+                >Blog <i class="fa-solid fa-chevron-down"></i>
+              </a>
+              <div class="dropdown-container-mob">
+                <a href="#">Blog 1</a>
+                <a href="#">Blog 2</a>
+                <a href="#">Blog 3</a>
+              </div>
+            </li>
+            <li>
+              <button><a href="#" class="menu-btn">Contact us</a></button>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+
+    <script>
+      const iconMenu = document.querySelector(".icon-menu");
+      const menuMob = document.querySelector(".menu-mob");
+      const menuIcon = iconMenu.querySelector("i");
+
+      // Função para alternar a visibilidade do menu móvel e o ícone do menu
+      function toggleMenu() {
+        if (menuMob.style.display === "block") {
+          menuMob.style.display = "none";
+          menuIcon.classList.remove("fa-times");
+          menuIcon.classList.add("fa-bars");
+        } else {
+          menuMob.style.display = "block";
+          menuIcon.classList.remove("fa-bars");
+          menuIcon.classList.add("fa-times");
+        }
+      }
+
+      // Adicionar um evento de clique ao ícone do menu
+      iconMenu.addEventListener("click", toggleMenu);
+    </script>
+  </body>
+</html>
