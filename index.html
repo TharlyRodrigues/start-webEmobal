@@ -29,7 +29,6 @@
           <a href="#" class="logo-menu"
             ><img src="img/logo.svg" alt="" />Educare</a
           >
-          <a href="#" class="icon-menu"><i class="fa-solid fa-bars"></i></a>
           <nav class="menu-nav">
             <ul>
               <li><a href="#">Home</a></li>
@@ -55,13 +54,14 @@
                 </div>
               </li>
               <li>
-                <button><a href="#" class="menu-btn">Contact us</a></button>
+                <button class="menu-btn">Contact us</button>
               </li>
             </ul>
           </nav>
         </div>
 
         <nav class="menu-mob">
+          <a href="#" class="icon-menu"><i class="fa-solid fa-bars"></i></a>
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
@@ -86,33 +86,14 @@
               </div>
             </li>
             <li>
-              <button><a href="#" class="menu-btn">Contact us</a></button>
+              <a href="#">
+                <button class="menu-btn-mob">Contact us</button>
+              </a>
             </li>
           </ul>
         </nav>
       </section>
     </header>
-
-    <script>
-      const iconMenu = document.querySelector(".icon-menu");
-      const menuMob = document.querySelector(".menu-mob");
-      const menuIcon = iconMenu.querySelector("i");
-
-      // Função para alternar a visibilidade do menu móvel e o ícone do menu
-      function toggleMenu() {
-        if (menuMob.style.display === "block") {
-          menuMob.style.display = "none";
-          menuIcon.classList.remove("fa-times");
-          menuIcon.classList.add("fa-bars");
-        } else {
-          menuMob.style.display = "block";
-          menuIcon.classList.remove("fa-bars");
-          menuIcon.classList.add("fa-times");
-        }
-      }
-
-      // Adicionar um evento de clique ao ícone do menu
-      iconMenu.addEventListener("click", toggleMenu);
-    </script>
+    <script src="js/mani.js"></script>
   </body>
 </html>

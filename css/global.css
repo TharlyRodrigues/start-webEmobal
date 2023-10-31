@@ -75,6 +75,7 @@ ul li a {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  text-decoration: none;
 }
 
 .fa-solid {
@@ -126,15 +127,12 @@ ul li a {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   border-radius: 0.5em;
+  width: 5rem;
+  margin-left: 4rem;
 }
 
 .dropdown-mob:hover .dropdown-container-mob {
   display: block;
-}
-
-.dropdown-mob:hover .fa-solid {
-  transform: rotate(180deg);
-  transition: 0.1s ease-in-out;
 }
 
 .icon-menu {
@@ -147,4 +145,39 @@ ul li a {
   display: none;
   color: #fff;
   font-size: 2rem;
+}
+
+.menu-btn {
+  width: 9.375rem;
+  height: 2.4375rem;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 0.625rem;
+  background: #c24914;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+
+.menu-btn:hover {
+  transform: scale(1.1);
+}
+
+.menu-btn-mob {
+  width: 10rem;
+  border: none;
+  border-radius: 0.625rem;
+  background: #c24914;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
 }
