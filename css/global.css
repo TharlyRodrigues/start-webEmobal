@@ -21,11 +21,6 @@ body {
   z-index: 10;
 }
 
-.menu-container-mob {
-  display: flex;
-  align-items: center;
-}
-
 ul li a {
   font-family: "Poppins", sans-serif;
   font-size: 1.25rem;
@@ -96,7 +91,10 @@ ul li a {
   transform: rotate(180deg);
   transition: 0.1s ease-in-out;
 }
-
+.menu-container-mob {
+  display: flex;
+  align-items: center;
+}
 .menu-mob {
   display: none;
   width: 50vw;
