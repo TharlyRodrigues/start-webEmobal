@@ -10,11 +10,6 @@
   .start-left {
     text-align: center;
   }
-
-  .icon-menu {
-    position: absolute;
-    left: 8rem;
-  }
 }
 
 @media screen and (max-width: 540px) {
@@ -50,10 +45,6 @@
 
   .start-left {
     text-align: center;
-  }
-
-  .icon-menu {
-    margin-left: 11rem;
   }
 }
 
