@@ -54,6 +54,7 @@
     flex-direction: column;
     align-items: center;
     margin-top: 3rem;
+    justify-content: center;
   }
 
   .welcome-left {
@@ -64,10 +65,15 @@
   .register-container {
     flex-direction: column;
     margin-top: 5rem;
+    align-items: center;
   }
 
   .register-right {
-    width: 73vw;
+    width: 55vw;
+  }
+
+  .register-left {
+    text-align: center;
   }
 }
 
